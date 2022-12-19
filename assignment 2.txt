@@ -1,0 +1,148 @@
+1.What are the two values of the Boolean data type? How do you write them?
+
+True and False
+1==1 is True whereas 2<1 is False.
+
+
+
+2. What are the three different types of Boolean operators?
+
+    and, or, and not
+    
+    
+    
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).    
+OR gate.
+Input A	Input B	Output Q
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+
+AND gate
+Input A	Input B	Output Q
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+
+NOT gate
+Input A	Output Q
+0	1
+1	0
+
+
+
+4. What are the values of the following expressions?
+
+(5 > 4) and (3 == 5) : False
+not (5 > 4) : False
+(5 > 4) or (3 == 5) : True
+not ((5 > 4) or (3 == 5)) : False
+(True and True) and (True == False) : False 
+(not False) or (not True) : True
+
+
+
+5. What are the six comparison operators?
+
+Python has six comparison operators, which are as follows:
+
+Less than ( < )
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equal to (>=)
+Equal to ( == )
+Not equal to ( != )
+
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+
+The “=” is an assignment operator used to assign the value on the right to the variable on the left
+ The '==' operator checks whether the two given operands are equal or not. If so, it returns true.
+ 
+ For example: a = 10, b = 20, ch = 'y'
+ 
+ For example: 5==5 This will return true
+ 
+ ex:
+ a,b=10,20
+ if a==b:
+     print('a is equal to b')
+ else:
+     print('a is not equal to b')
+     
+     
+
+
+7. Identify the three blocks in this code:
+
+spam = 0
+if spam == 10:
+    print('eggs')        # indent increased, block A
+    if spam > 5:         # still block A
+        print('bacon')   # still block A, indent increased, block B inside block A
+    else:                # still block A, indent decreased, block B ended in line above
+        print('ham')     # still block A, indent increased, block C inside block A
+    print('spam')        # still block A, indent decreased, block C ended in line above
+print('spam')            # indent decreased, block A ended in line above
+
+
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+   
+spam = input()
+
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howdy')
+else:
+    print('Greetings!')     
+    
+
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+ CTRL + C 
+ 
+
+
+10. How can you tell the difference between break and continue?
+
+    The main difference between both the statements is that when break keyword comes, it terminates the execution of the current loop and passes the control over the next loop or main body, whereas when continue keyword is encountered, it skips the current iteration and executes the very next iteration in the loop
+    
+    
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+    There is no difference between range(10), range(0, 10), and range(0, 10, 1)
+    The value of range(10), range(0, 10), and range(0, 10, 1) are eaqual.
+    
+    
+  
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+
+for loop:
+
+for i in range(1,11):
+    print(i)
+    
+while loop:
+
+count=1
+while count<=10:
+    print(count)
+    count+=1
+    
+
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+
+spam. bacon()
+        
+
+  
