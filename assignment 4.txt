@@ -1,0 +1,112 @@
+1. What exactly is []?
+
+    [] is an empty list. Which contains no elements.
+
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+
+    spam[2] = 'hello'
+    
+spam = [2, 4, 6, 8, 10]
+spam[2] = 'hello' 
+spam    
+
+o/p:[2, 4, 'hello', 8, 10]
+
+
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+
+spam = [2, 4, 6, 8, 10]
+spam[int(int('3' * 2) / 11)]
+
+ans:8
+
+
+
+4. What is the value of spam[-1]?
+
+    10
+    
+    
+    
+5. What is the value of spam[:2]?
+
+    [2, 4]
+    
+    
+    
+Let's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.
+
+6. What is the value of bacon.index('cat')?
+
+    1
+    
+7. How does bacon.append(99) change the look of the list value in bacon?
+
+    bacon=[3.14, 'cat', 11, 'cat', True,99]
+    
+8. How does bacon.remove('cat') change the look of the list in bacon?
+
+    [3.14, 11, 'cat', True, 99]
+    
+    
+    
+9. What are the list concatenation and list replication operators?
+
+    The operator for list concatenation is +, while the operator for replication is *.
+10. What is difference between the list methods append() and insert()?
+
+     append() adds an item to the end of a list, whereas . insert() inserts and item in a specified position in the list.
+
+
+
+11. What are the two methods for removing items from a list?
+
+    The methods are remove(), pop() and clear(). It helps to remove the very first given element matching from the list. The pop() method removes an element from the list based on the index given. The clear() method will remove all the elements present in the list.
+    
+    
+    
+12. Describe how list values and string values are identical.
+
+    The similarity between Lists and Strings in Python is that both are sequences. The differences between them are that firstly, Lists are mutable but Strings are immutable. Secondly, elements of a list can be of different types whereas a String only contains characters that are all of String type.
+    
+    
+    
+13. What's the difference between tuples and lists?
+
+    The primary difference between tuples and lists is that tuples are immutable as opposed to lists which are mutable. Therefore, it is possible to change a list but not a tuple. The contents of a tuple cannot change once they have been created in Python due to the immutability of tuples.Also, tuples are written using parentheses, ( and ), while lists use the square brackets, [ and ].
+14. How do you type a tuple value that only contains the integer 42?
+
+    t=(4)
+    
+    
+    
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+
+    Using the tuple() built-in function
+An iterable can be passed as an input to the tuple () function, which will convert it to a tuple object. If you want to convert a Python list to a tuple, you can use the tuple() function to pass the full list as an argument, and it will return the tuple data type as an output
+
+    Python list method list() takes sequence types and converts them to lists. This is used to convert a given tuple into list
+    
+    
+    
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+
+    Variables will contain references to list values rather than list values themselves.
+    
+    
+    
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+
+    copy() create reference to original object. If you change copied object - you change the original object. . deepcopy() creates new object and does real copying of original object to new one. Changing new deepcopied object doesn't affect original object.
+
+
+
+
+
+
+
+
+     
